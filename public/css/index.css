@@ -138,12 +138,12 @@ td {
 }
 
 .home-cta {
-  background-color: #FFFFFF;
+  background-color: #666;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .home-cta:hover {
-  background-color: #000000;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=index.css.map */
