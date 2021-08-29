@@ -1,6 +1,6 @@
 // Variables
-$primary-color: #f2f2f2;
-$secondary-color: #222;
+$primary-color: #222;
+$secondary-color: #f2f2f2;
 
 // css
 * {
@@ -15,7 +15,7 @@ $secondary-color: #222;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: $primary-color;
+	background-color: $secondary-color;
 }
 
 .nav__top--logo {
@@ -126,3 +126,4 @@ td {
 		background-color: $secondary-color;
 	}
 }
+
