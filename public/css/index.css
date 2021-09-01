@@ -1,9 +1,22 @@
+body{
+  background-color: black;
+  color: white;
+
+}
+textarea:focus, input:focus {
+    color: #ffffff;
+}
+
+input, select, textarea{
+    color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'ZCOOL KuaiLe', cursive;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Montserrat";
+          box-sizing: border-box
 }
 
 .nav__top {
@@ -60,6 +73,8 @@
 #content-area {
   width: 100vw;
   height: 92vh;
+  padding-right: 20px;
+  padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,20 +88,38 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(5px);
 }
 
 #content-area h1 {
+  margin-bottom: 40px;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+#content-area h2 {
   margin-bottom: 40px;
   font-size: 35px;
   text-transform: uppercase;
   font-weight: 800;
 }
-
+.blur {
+  padding-light: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 4px #999;
+          box-shadow: 0 0 4px #999;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
+}
 .login-form {
   padding: 20px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 4px #999;
           box-shadow: 0 0 4px #999;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
 }
 
 .login-form button {
@@ -132,9 +165,13 @@ tr {
   font-size: 18px;
 }
 
+th {
+  padding-right: 30px;
+}
+
 td {
   font-size: 14px;
-  color: #666;
+  color: white;
 }
 
 .home-cta {
