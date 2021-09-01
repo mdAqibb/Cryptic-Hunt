@@ -8,13 +8,13 @@ mixin tableElement(rank, name, level)
 
 block content 
   h1 leaderboard
-  .blur
-    table(class="centered leaderboard")
-      thead
-        tr
-          th Rank
-          th Name
-          th Level
-      tbody
-        each user, index in users
-          +tableElement(`${index + 1}`, user.username, user.level)
+  table(class="centered leaderboard")
+    thead
+      tr
+        th Rank
+        th Name
+        th Level
+
+    tbody
+      each user, index in users
+        +tableElement(`${index + 1}`, user.username, user.level)
