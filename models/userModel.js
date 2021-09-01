@@ -13,6 +13,12 @@ const userSchema = new mongoose.Schema({
 		minlength: [8, "Please have atleast 8 characters!"],
 		select: false,
 	},
+	email:{
+		type: String,
+		required: true,
+		unique: [true, "This email is already in use!"],
+		
+	},
 	role: {
 		type: String,
 		enum: ["user", "admin"],
