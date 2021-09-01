@@ -10,7 +10,7 @@ router.get("/login", (req, res) => {
 	});
 });
 
-router.get("/signupAdmin", (req, res) => {
+router.get("/signup", (req, res) => {
 	res.status(200).render("signup", {
 		title: "Sign Up",
 	});
